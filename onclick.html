@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#box{
+			width: 200px;
+			height:200px;
+          background: pink;
+          display: none;
+		}
+	</style>
+</head>
+<body>
+  <p id="dianji">点我啊</p>
+  <div id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+	function $(id){
+	  return document.getElementById(id);
+	}
+	var zhuanhuan=true;
+	$("dianji").onclick=function(){
+		// if($("box").style.display=="none"){
+  //        $("box").style.display="block";
+		// }
+		// $("box").style.display="block";
+
+if(zhuanhuan){
+	$("box").style.display="block";
+	// zhuanhuan=false;
+}
+else{
+	$("box").style.display="none";
+	// zhuanhuan=true;
+}
+zhuanhuan=!zhuanhuan;
+
+
+
+
+
+
+
+
+
+	}
+</script>
